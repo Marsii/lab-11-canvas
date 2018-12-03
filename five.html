@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <canvas id="canvas1" width="500" height="500"></canvas>
+
+
+
+
+<script>
+
+//function draw(){
+
+var canvas1 = document.getElementById('canvas1');
+var context = canvas1.getContext("2d");
+
+var x;
+
+for (var x = 50; x < 300 ; x = x + 50) {
+  context.fillStyle = "#66ccff"
+  context.fillRect(x, 100, 40, 40);
+  }
+
+
+//}
+
+</script>
+</body>
+</html>
