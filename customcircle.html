@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <canvas id="canvas1" width="400" height="400"></canvas>
+
+
+
+
+<script>
+
+//function draw(){
+
+var canvas1 = document.getElementById('canvas1');
+var context = canvas1.getContext("2d");
+
+var WColor = prompt("What color do you want?");
+
+if (WColor === "red") {
+c = "#ff0000"
+}
+else if (WColor === "blue") {
+c = "#0000ff"
+}
+else if (WColor === "green") {
+c = "#00ff00"
+}
+else {
+c = "#ff33cc"
+console.log("Defaulted to pink")
+}
+var WRadius = prompt("What radius do you want?");
+var r = parseInt(WRadius);
+context.fillStyle = c
+//context.fillRect(100, 100, 100, 100);
+
+context.beginPath();
+context.arc(100, 100, r, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+//}
+
+</script>
+</body>
+</html>
