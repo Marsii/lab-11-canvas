@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <canvas id="canvas1" width="700" height="400"></canvas>
+
+
+
+
+<script>
+
+//function draw(){
+
+var canvas1 = document.getElementById('canvas1');
+var context = canvas1.getContext("2d");
+var f;
+var t;
+
+context.fillStyle = "#000000"
+context.fillRect(25 , 25, 265, 200);
+
+
+context.fillStyle = "#ffffff"
+context.fillRect(30 , 30, 255, 190);
+
+for(var f = 0; f < 5; f = f + 1) {
+
+  for(var t = 0; t < 7; t = t + 1) {
+
+    context.fillStyle = "#000000"
+    context.fillRect(40 + t*35, 40 + f*35, 25, 25);
+
+
+  }
+  }
+
+
+</script>
+</body>
+</html>

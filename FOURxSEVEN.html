@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <canvas id="canvas1" width="700" height="400"></canvas>
+
+
+
+
+<script>
+
+//function draw(){
+
+var canvas1 = document.getElementById('canvas1');
+var context = canvas1.getContext("2d");
+var f;
+var t;
+
+for(var f = 0; f < 4; f = f + 1) {
+
+  for(var t = 0; t < 7; t = t + 1) {
+
+      context.fillStyle = "#ff33ff"
+      context.beginPath();
+      context.arc(50 + f*35, 25 + t*35, 15, 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+
+  }
+    // context.fillStyle = "#ff33ff"
+    // context.beginPath();
+    // context.arc(50, 25 + f*35, 15, 0, 2 * Math.PI, true);
+    // context.closePath();
+    // context.fill();
+  }
+
+
+</script>
+</body>
+</html>
