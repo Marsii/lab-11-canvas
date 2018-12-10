@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <canvas id="canvas1" width="500" height="400"></canvas>
+
+
+
+
+<script>
+
+//function draw(){
+
+var canvas1 = document.getElementById('canvas1');
+var context = canvas1.getContext("2d");
+var t;
+
+for(var t = 1; t < 11; t = t + 2) {
+
+    context.fillStyle = "#ff33ff"
+    context.beginPath();
+    context.arc(50 + t*25, 235, 15, 0, 2 * Math.PI, true);
+    context.closePath();
+    context.fill();
+    console.log(t);
+}
+
+
+</script>
+</body>
+</html>
