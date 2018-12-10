@@ -15,18 +15,23 @@ var canvas1 = document.getElementById('canvas1');
 var context = canvas1.getContext("2d");
 
 context.fillStyle = "#c918cc"
-context.fillRect(100, 100, 200, 50);
+context.fillRect(100, 200, 200, 55);
 
 context.fillStyle = "#c918cc"
-context.fillRect(100, 100, 100, 120);
+context.fillRect(140, 150, 120, 100);
 
 
 context.fillStyle = "#000000"
 context.beginPath();
-context.arc(270, 150, 50, 0, 2 * Math.PI, true);
+context.arc(245, 252, 30, 0, 2 * Math.PI, true);
 context.closePath();
 context.fill();
 
+context.fillStyle = "#000000"
+context.beginPath();
+context.arc(160, 252, 30, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
 //}
 
 </script>
