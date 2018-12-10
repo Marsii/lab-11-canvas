@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <canvas id="canvas1" width="700" height="400"></canvas>
+
+
+
+
+<script>
+
+//function draw(){
+
+var canvas1 = document.getElementById('canvas1');
+var context = canvas1.getContext("2d");
+var f;
+var t;
+
+
+// context.fillStyle = "#ffffff"
+// context.fillRect(30 , 30, 255, 190);
+
+for(var f = 0; f < 8; f = f + 1) {
+
+  for(var t = 0; t < 8; t = t + 1) {
+
+    if (f%2 != 0 && t%2 != 0)  {
+      context.fillStyle = "#ffffff"
+      context.fillRect(25 + t*25, 25 + f*25, 25, 25);
+      }
+      else if (f%2 == 0 && t%2 != 0)  {
+        context.fillStyle = "#000000"
+        context.fillRect(25 + t*25, 25 + f*25, 25, 25);
+      }
+      else if (f%2 == 0 && t%2 == 0)  {
+        context.fillStyle = "#ffffff"
+        context.fillRect(25 + t*25, 25 + f*25, 25, 25);
+      }
+      else if (f%2 != 0 && t%2 == 0)  {
+        context.fillStyle = "#000000"
+        context.fillRect(25 + t*25, 25 + f*25, 25, 25);
+      }
+      else {
+          console.log(t)
+          console.log(t)
+        }
+
+  }
+}
+
+for(var a = 0; a < 4; a = a + 1) {
+
+  for(var b = 0; b < 8; b = b + 1) {
+
+    if (a%2 == 0 && b%2 != 0){
+  context.fillStyle = "#0000e6"
+  context.beginPath();
+  context.arc(40 + b*25, 35, 10, 0, 2 * Math.PI, true);
+  context.closePath();
+  context.fill();
+
+  context.fillStyle = "#0000e6"
+  context.beginPath();
+  context.arc(40 + b*25, 85, 10, 0, 2 * Math.PI, true);
+  context.closePath();
+  context.fill();
+}
+  else if (a%2 != 0 && b%2 == 0)  {
+    context.fillStyle = "#0000e6"
+    context.beginPath();
+    context.arc(40 + b*25, 60, 10, 0, 2 * Math.PI, true);
+    context.closePath();
+    context.fill();
+  }
+
+}
+}
+
+for(var c = 0; c < 4; c = c + 1) {
+
+  for(var d = 0; d < 8; d = d + 1) {
+
+    if (c%2 == 0 && d%2 != 0){
+  context.fillStyle = "#00cc00"
+  context.beginPath();
+  context.arc(15 + d*25, 160, 10, 0, 2 * Math.PI, true);
+  context.closePath();
+  context.fill();
+
+  context.fillStyle = "#00cc00"
+  context.beginPath();
+  context.arc(15 + d*25, 215, 10, 0, 2 * Math.PI, true);
+  context.closePath();
+  context.fill();
+}
+  else if (c%2 != 0 && d%2 == 0)  {
+    context.fillStyle = "#00cc00"
+    context.beginPath();
+    context.arc(65 + d*25, 185, 10, 0, 2 * Math.PI, true);
+    context.closePath();
+    context.fill();
+  }
+
+}
+}
+
+</script>
+</body>
+</html>
