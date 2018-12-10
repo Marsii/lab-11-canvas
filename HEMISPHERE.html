@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <canvas id="canvas1" width="500" height="400"></canvas>
+
+
+
+
+<script>
+
+//function draw(){
+
+var canvas1 = document.getElementById('canvas1');
+var context = canvas1.getContext("2d");
+
+context.fillStyle = "#ff704d"
+context.beginPath();
+context.arc(270, 150, 150, 0, 1 * Math.PI, true);
+context.closePath();
+context.fill();
+
+context.fillStyle = "#ff3385"
+context.beginPath();
+context.arc(270, 170, 150, 0, 1 * Math.PI, false);
+context.closePath();
+context.fill();
+
+//}
+
+</script>
+</body>
+</html>
